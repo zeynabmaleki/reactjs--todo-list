@@ -1,0 +1,51 @@
+.todo-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px; /* Space below the input field */
+}
+
+.todo-input input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    color: #333; /* Changed to a darker color for better contrast */
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.todo-input input:focus {
+    border-color: #9d4edd; /* Purple border on focus */
+    background: rgba(255, 255, 255, 0.3); /* Slightly brighter background on focus */
+    box-shadow: 0 0 10px rgba(157, 78, 221, 0.5); /* Purple glow on focus */
+    color: #000; /* Darker text color for better readability */
+}
+
+.todo-input input::placeholder {
+    color: rgba(51, 51, 51, 0.7); /* Darker placeholder text color for better visibility */
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6b21a8, #9d4edd); /* Purple gradient background */
+    color: #ffffff; /* White text for better contrast */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.todo-input button:hover {
+    background: linear-gradient(135deg, #9d4edd, #6b21a8); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}

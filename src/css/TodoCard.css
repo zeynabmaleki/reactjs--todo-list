@@ -1,0 +1,45 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: linear-gradient(135deg, #000000 0%, #1e3a8a 50%, #6b21a8 100%); /* Black, blue, and purple gradient */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    color: #ffffff; /* White text for better contrast */
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.action-container {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.action-container button {
+    all: unset; /* Reset all default button styles */
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff; /* White for better visibility */
+    transition: color 0.2s ease, transform 0.2s ease;
+    background: none; /* Ensure no background is applied */
+    border: none; /* Remove any default borders */
+    padding: 5px; /* Add some padding for better clickability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-container button:hover {
+    color: #a140e6; /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom on hover */
+}

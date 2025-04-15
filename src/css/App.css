@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensure consistent box model */
+    height: 100%;
+    /* Ensure the body takes up the full height */
+}
+
+@keyframes backgroundFlow {
+    0% {
+        background-position: 0% 50%;
+        /* Start position */
+    }
+
+    50% {
+        background-position: 100% 50%;
+        /* Middle position */
+    }
+
+    100% {
+        background-position: 0% 50%;
+        /* End position (loop back) */
+    }
+}
+
+.App {
+    background: linear-gradient(135deg, #1e3a8a, #6b21a8, #c72ad2, #ee6bff);
+    /* Gradient colors */
+    background-size: 300% 300%;
+    /* Make the gradient larger for smooth flow */
+    animation: backgroundFlow 10s infinite linear;
+    /* Apply animation */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    /* Prevent scrollbars if content overflows */
+}
+
+.todo-app {
+    background: rgba(255, 255, 255, 0.1);
+    /* Slightly more transparent */
+    border-radius: 20px;
+    /* Softer corners */
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow for depth */
+    backdrop-filter: blur(12px);
+    /* Increased blur for a frosted effect */
+    -webkit-backdrop-filter: blur(12px);
+    /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* Subtle border */
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    color: #ffffff;
+    /* White text for better contrast */
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 10px 0px 10px;
+    color: #ffffff;
+    /* White text for better contrast */
+    font-size: 14px;
+}
