@@ -68,7 +68,7 @@ function persistData(newList) {
       </div>
 
       <div className="footer">
-        <p>Made with ❤️ by Your Name</p>
+        <p>Made by Zeynab Maleki rad</p>
       </div>
     </div>
   )
